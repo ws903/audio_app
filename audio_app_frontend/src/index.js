@@ -25,14 +25,18 @@ function addSongToHtml(song) {
 	li.innerText = title
 	ul.appendChild(li)
 
-	li.addEventListener('click', function() {
-		const player = document.querySelector('#audio-player')
-		// debugger
-		const source = player.querySelector('source')
-		debugger
-		source.src = `${link}`
-		// player.src = `${playLink}`
-	})
+	const dlBtn = document.querySelector('#dl-btn')
+	dlBtn.src = `https://www.download-mp3-youtube.com/api/?api_key=MzM3NDE0NTY2&format=mp3&video_id=${id}`
+	debugger
+
+	// li.addEventListener('click', function() {
+	// 	const player = document.querySelector('#audio-player')
+	// 	// debugger
+	// 	// const source = player.querySelector('source')
+	// 	// debugger
+	// 	player.src = `${playLink}`
+	// 	// player.src = `${playLink}`
+	// })
 }
 
 fetchSong(link)
