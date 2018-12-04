@@ -27,7 +27,11 @@ function addSongToHtml(song) {
 
 	li.addEventListener('click', function() {
 		const player = document.querySelector('#audio-player')
-		player.src = `${playLink}`
+		// debugger
+		const source = player.querySelector('source')
+		debugger
+		source.src = `${link}`
+		// player.src = `${playLink}`
 	})
 }
 
