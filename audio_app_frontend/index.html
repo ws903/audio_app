@@ -1,47 +1,56 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <link href="Main.css" rel="stylesheet"/>
-  <script src="id3-minimized.js"></script>
-  <script src="jquery-1.10.2.min.js"></script>
-  <title>Song App</title>
-</head>
-<body>
-<div id="bg">
-  <div id="blackLayer"></div>
-  <div id="playlist">
-    <img src="Poster1.jpg"/>
-    <h3 id="playlist-title">Playlist</h3>
-    <span class="song">1.Song</span><br>
-    <span class="song">2.Song</span><br>
-    <span class="song">3.Song</span><br>
-    <span class="song">4.Song</span><br>
-    <br>
-  </div>
-  <img src="Poster1.jpg"/>
-</div>
+  <head>
+    <link href="Main.css" rel="stylesheet"/>
+    <script src="id3-minimized.js"></script>
+    <script src="jquery-1.10.2.min.js"></script>
+    <title>Song App</title>
+  </head>
+  <body>
 
-  <div id="main">
-  <div id="image">
-    <img src="Poster1.jpg"/>
-  </div>
-   <div id="music-player">
-            <div id="songTitle">Demo</div>
-                <div id="buttons">
-                    <button id="pre" onclick="pre()"><img src="Pre.png" height="90%" width="90%"/></button>
-                    <button id="play" onclick="playOrPauseSong()"><img src="Play.png"/></button>
-                    <button id="next" onclick="next()"><img src="Next.png" height="90%" width="90%"/></button>
-                </div>
-
-                <div id="seek-bar">
-                    <div id="fill"></div>
-                    <div id="handle"></div>
-                </div>
+    <div class="form">
+      <form id="song-form">
+        Upload Song:<br>
+        <input type="file" name="song_file" accept="audio/*">
+        <br><br>
+        <input type="submit" value="Submit">
+      </form>
     </div>
 
-  </div>
-  <script src="index.js"></script>
-</body>
+    <div id="bg">
+    <div id="blackLayer"></div>
+      <div id="playlist">
+        <img src="Poster1.jpg"/>
+        <h3 id="playlist-title">Playlist</h3>
+        <ul id="playlist-list">
 
+        </ul>
+        <br>
+      </div>
+      <img src="Poster1.jpg"/>
+    </div>
+
+    <div id="main">
+    <div id="image">
+      <img src="Poster1.jpg"/>
+    </div>
+    <div id="music-player">
+      <div id="songTitle">Demo</div>
+        <div id="buttons">
+            <button id="pre" onclick="pre()"><img src="Pre.png" height="90%" width="90%"/></button>
+            <button id="play" onclick="playOrPauseSong()"><img src="Play.png"/></button>
+            <button id="next" onclick="next()"><img src="Next.png" height="90%" width="90%"/></button>
+        </div>
+
+        <div id="seek-bar">
+            <div id="fill"></div>
+            <div id="handle"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+
+  </body>
 </html>
 
