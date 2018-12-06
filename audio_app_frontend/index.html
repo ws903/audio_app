@@ -2,17 +2,25 @@
 <html>
 <head>
   <link href="Main.css" rel="stylesheet"/>
+  <script src="id3-minimized.js"></script>
   <script src="jquery-1.10.2.min.js"></script>
-  <script src="node_modules/musicmedata/dist/musicmetadata.js"></script>
-  <script src="index.js"></script>
-
   <title>Song App</title>
 </head>
 <body>
 <div id="bg">
   <div id="blackLayer"></div>
+  <div id="playlist">
+    <img src="Poster1.jpg"/>
+    <h3 id="playlist-title">Playlist</h3>
+    <span class="song">1.Song</span><br>
+    <span class="song">2.Song</span><br>
+    <span class="song">3.Song</span><br>
+    <span class="song">4.Song</span><br>
+    <br>
+  </div>
   <img src="Poster1.jpg"/>
 </div>
+
   <div id="main">
   <div id="image">
     <img src="Poster1.jpg"/>
@@ -32,11 +40,7 @@
     </div>
 
   </div>
-  <div id="playlist">
-    1. Playlist
-    2. Return
-    3. Running
-  </div>
+  <script src="index.js"></script>
 </body>
 
 </html>
