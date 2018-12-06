@@ -4,7 +4,7 @@ module Api
 			def create
 				song = Song.new(song_params)
 				if song.save
-					
+					render json: song
 				end
 			end
 

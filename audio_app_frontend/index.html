@@ -1,35 +1,56 @@
-<!doctype html>
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="Main.css" rel="stylesheet"/>
+    <script src="id3-minimized.js"></script>
+    <script src="jquery-1.10.2.min.js"></script>
+    <title>Song App</title>
+  </head>
+  <body>
 
-<html lang="en">
-<head>
+    <div class="form">
+      <form id="song-form">
+        Upload Song:<br>
+        <input type="file" name="song_file" accept="audio/*">
+        <br><br>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
 
-	<meta charset="utf-8">
+    <div id="bg">
+    <div id="blackLayer"></div>
+      <div id="playlist">
+        <img src="Poster1.jpg"/>
+        <h3 id="playlist-title">Playlist</h3>
+        <ul id="playlist-list">
 
-	<title>Audio App</title>
-	<meta name="description" content="Audio App">
-	<meta name="author" content="SitePoint">
+        </ul>
+        <br>
+      </div>
+      <img src="Poster1.jpg"/>
+    </div>
 
-	<!-- <link rel="stylesheet" href="css/styles.css?v=1.0"> -->
-	<script src="src/index.js"></script>
+    <div id="main">
+    <div id="image">
+      <img src="Poster1.jpg"/>
+    </div>
+    <div id="music-player">
+      <div id="songTitle">Demo</div>
+        <div id="buttons">
+            <button id="pre" onclick="pre()"><img src="Pre.png" height="90%" width="90%"/></button>
+            <button id="play" onclick="playOrPauseSong()"><img src="Play.png"/></button>
+            <button id="next" onclick="next()"><img src="Next.png" height="90%" width="90%"/></button>
+        </div>
 
-</head>
+        <div id="seek-bar">
+            <div id="fill"></div>
+            <div id="handle"></div>
+        </div>
+      </div>
+    </div>
 
-<body>
-	<!-- <iframe id="audio-player" src="" width="560" height="315" frameborder="0" allowfullscreen></iframe> -->
-    <audio id="audio-player" preload="none" controls src="" type="video/x-youtube" autoplay>
-    </audio>
+    <script src="index.js"></script>
 
-    <form id="song-form">
-		Upload Song:<br>
-		<input type="file" name="song_file" accept="audio/*">
-		<br><br>
-		<input type="submit" value="Submit">
-	</form> 
-
-    <iframe id="dl-btn" width="250px" height="60px" scrolling="no" style="border:none;" src=""></iframe>
-
-	<ul id="song-list">
-
-	</ul>
-</body>
+  </body>
 </html>
+
