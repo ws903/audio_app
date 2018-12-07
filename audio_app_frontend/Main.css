@@ -60,11 +60,12 @@ span.uptext{
 
 input.file{
   position:relative;
-  left:-20%;
+  left:-15%;
   font-family: monospace;
   font-size:100%;
   cursor:pointer;
   width:80%;
+  opacity: 0.5;
 }
 
 input.submit{
@@ -74,6 +75,7 @@ input.submit{
   font-size:100%;
   width:30%;
   cursor:pointer;
+  opacity: 0.5;
 }
 
 
