@@ -40,10 +40,19 @@ div.form{
     color: #000;
     border: solid;
     box-shadow: 0px 5px black;
-    font-family: monospace;
-
-
+    font-family: monospace
+    animation-name: example;
+    animation-duration: 3s;
+    -webkit-animation-name: example;
+    -webkit-animation-duration: 3s;
+    opacity: 1.0;
 }
+
+@keyframes example {
+  from {width: 0%; height: 0%; opacity: 0.0;}
+  to {width: 20%; height: 20%; opacity: 1.0;}
+}
+
 
 span.upload{
   position:relative;
@@ -52,9 +61,10 @@ span.upload{
 
 }
 
-span.uptext{
+div.uptext{
   position: relative;
   left:-5%;
+  font-family: monospace;
 }
 
 
@@ -65,7 +75,7 @@ input.file{
   font-size:100%;
   cursor:pointer;
   width:80%;
-  opacity: 0.5;
+  opacity: 0.6;
 }
 
 input.submit{
@@ -75,7 +85,7 @@ input.submit{
   font-size:100%;
   width:30%;
   cursor:pointer;
-  opacity: 0.5;
+  opacity: 0.6;
 }
 
 
@@ -85,6 +95,9 @@ span.track-span{
   z-index:60;
 }
 
+span.uptext{
+  font-family: monospace;
+}
 
 
 span.track-span:hover {
@@ -102,8 +115,9 @@ span.track-span:hover {
   cursor: default;
 }
 
+
 #song-form{
-  top:10%;
+  top:0%;
   left:5%;
   position:relative;
   bottom:50%;
@@ -163,7 +177,16 @@ span.track-span:hover {
     color: #000;
     border: solid;
     box-shadow: 0px 5px black;
+    animation-name: playlist;
+    animation-duration: 3.5s;
+    -webkit-animation-name: playlist;
+    -webkit-animation-duration: 3.5s;
+    opacity: 1.0;
+}
 
+@keyframes playlist {
+  from {width: 0%; height: 0%; opacity: 0.0;}
+  to {width: 30%; height: 60%; opacity: 1.0;}
 }
 
 
@@ -183,8 +206,8 @@ span.track-span:hover {
     left: 50%;
     transform: translate(-50%,-50%);
     z-index: 999;
-
 }
+
 #image img{
     height: 180px;
     width: 100%;
@@ -287,6 +310,94 @@ div.track-div:active {
   background-color:none;
   box-shadow: 0 2px black;
   transform: translateY(4px);
+}
+
+#delete{
+  width: 10%;
+  height:5%;
+  background-color:none;
+  border-radius: 15px;
+  border-color:none;
+  border-style: groove;
+  position: relative;
+  left: 80%;
+  top:90%;
+  bottom: 10%;
+  right: 20%;
+  transform: translate(-50%,-50%);
+  z-index: 998;
+  white-space:nowrap;
+  padding: 1px 1px;
+  outline: none;
+  color: #000;
+  border: solid;
+  box-shadow: 0px 5px black;
+  animation-name: dtitle;
+  animation-duration: 2s;
+  -webkit-animation-name: dtitle;
+  -webkit-animation-duration: 2s;
+  opacity: 1.0;
+  cursor:pointer;
+}
+
+@keyframes dtitle {
+  from {width: 0%; height: 0%; opacity: 0.0;}
+  to {width: 10%; height: 5%; opacity: 1.0;}
+}
+
+#delete:active {
+  background-color:none;
+  box-shadow: 0 2px black;
+  left: 80%;
+  top:91%;
+  bottom: 10%;
+  right: 20%;
+}
+
+
+#pTitle {
+  width: 30%;
+  height:10%;
+  background-color:none;
+  border-radius: 15px;
+  border-color:none;
+  border-style: groove;
+  position: relative;
+  left: 80%;
+  top:12%;
+  bottom: 50%;
+  right: 20%;
+  transform: translate(-50%,-50%);
+  z-index: 998;
+  white-space:nowrap;
+  padding: 1px 1px;
+  outline: none;
+  color: #000;
+  border: solid;
+  box-shadow: 0px 5px black;
+  animation-name: ptitle;
+  animation-duration: 2s;
+  -webkit-animation-name: ptitle;
+  -webkit-animation-duration: 2s;
+  opacity: 1.0;
+}
+
+@keyframes ptitle {
+  from {width: 0%; height: 0%; opacity: 0.0;}
+  to {width: 30%; height: 10%; opacity: 1.0;}
+}
+
+#d-title{
+  font-family: monospace;
+  font-size: 150%;
+  color: white;
+  position: relative;
+  left:30%;
+  bottom:30%;
+}
+
+#d-title:hover{
+  color:black;
 }
 
 

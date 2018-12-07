@@ -62,7 +62,10 @@ const submitSong = song => {
     body: JSON.stringify(data)
   })
   .then(resp => resp.json())
-  .then(addSongToHtml)
+  .then(song => {
+    songs.push(song.song_file)
+    addSongToHtml(song)
+  });
 }
 
 const fetchSongs = () => {
