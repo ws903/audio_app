@@ -7,25 +7,22 @@
     <title>Song App</title>
   </head>
   <body>
-
-    <div class="form">
-      <form id="song-form">
-        Upload Song:<br>
-        <input type="file" name="song_file" accept="audio/*">
-        <br><br>
-        <input type="submit" value="Submit">
-      </form>
-    </div>
-
     <div id="bg">
     <div id="blackLayer"></div>
+    <div class="form">
+      <form id="song-form">
+        <span class="upload"><span class="uptext"><h2>Upload Song:</h2></span><input class="file" type="file" name="song_file" accept="audio/*"><br><br>
+        <input class="submit" type="submit" value="Submit"></span>
+      </form>
+    </div>
       <div id="playlist">
-        <img src="Poster1.jpg"/>
-        <h3 id="playlist-title">Playlist</h3>
-        <ul id="playlist-list">
-
-        </ul>
+        <div id="innerPL">
+        <!-- <img src="Poster1.jpg"/> -->
+        <h2 id="playlist-title">Playlist</h2>
+        <ol id="playlist-list">
+        </ol>
         <br>
+        </div>
       </div>
       <img src="Poster1.jpg"/>
     </div>
